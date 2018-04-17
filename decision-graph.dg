@@ -1,0 +1,43 @@
+[>reg< ask:
+  {text: Can the data be accessed by non-registered users?}
+  {answers:
+    {yes: [set: Registration=notRequired]}
+    {no:  [set: Registration=required]}
+  }
+]
+[>dua< ask:
+  {text: Which type of DUA does the data have? }
+  {terms:
+    {DUA: Data use agreement.}
+  }
+  {answers:
+    {open: [set: DUA=open]}
+    {standard: [set: DUA=standard]}
+    {custom: [set: DUA=custom]}
+  }
+]
+[>dua-am< ask:
+  {text: How do users accept the DUA?}
+  {terms:
+    {implied: The user accepts the terms by using Dataverse.}
+  }
+  {answers:
+    {implied: [set: DUAAgreementMethod=implied]}
+    {click through: [set: DUAAgreementMethod=clickThrough]}
+    {signed: [set: DUAAgreementMethod=signed]}
+  }
+]
+[>FileAccess< ask:
+  {text: Do users have to request approval prior to using each file? }
+  {answers:
+    {no: [set: FileAccess=open]}
+    {yes: [set: FileAccess=restricted]}
+  }
+]
+[>Storage< ask:
+  {text: Do the data have to be stored encrypted?}
+  {answers:
+    {yes: [set: Storage=encrypted]}
+    {no:  [set: Storage=clear]}
+  }
+]

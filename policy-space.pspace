@@ -1,0 +1,20 @@
+DataverseTags: consists of DataTags, Handling, Access.
+
+DataTags: one of Blue, Yellow, Green, Orange.
+
+Handling [How Dataverse should handle the data]: consists of Storage.
+
+Access [How people can access the data]: consists of Registration, DUA, DUAAgreementMethod, FileAccess.
+
+Registration: one of notRequired, required.
+
+DUA: one of open,
+            standard[erms that say that we you need to register because we might need to contact you in the future if data need to be deleted],
+            custom.
+
+DUAAgreementMethod: one of implied, clickThrough, signed.
+
+FileAccess: one of open [ Can access after accepting DUA. ],
+                   restricted [ Need to request access to each file. ].
+
+Storage: one of clear, encrypted.

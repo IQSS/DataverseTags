@@ -1,0 +1,18 @@
+[DataTags: support
+  [Registration=notRequired; DUA=open;
+    DUAAgreementMethod=implied; FileAccess=open;
+    Storage=clear
+    -> Blue]
+  [Registration=required; DUA=standard;
+    DUAAgreementMethod=implied; FileAccess=open;
+    Storage=clear
+    -> Green]
+  [Registration=required; DUA=custom;
+    DUAAgreementMethod=clickThrough; FileAccess=restricted;
+    Storage=clear
+    -> Yellow]
+  [Registration=required; DUA=custom;
+    DUAAgreementMethod=signed; FileAccess=restricted;
+    Storage=encrypted
+    -> Orange]
+]
