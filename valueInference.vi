@@ -1,4 +1,4 @@
-[DataTags: support
+[Code: support
   [Registration=notRequired; DUA=open;
     DUAAgreementMethod=implied; FileAccess=open;
     Storage=clear

@@ -1,6 +1,6 @@
-DataverseTags: consists of DataTags, Handling, Access.
+DataverseTags: consists of Code, Handling, Access.
 
-DataTags: one of Blue, Yellow, Green, Orange.
+Code: one of Blue, Yellow, Green, Orange.
 
 Handling [How Dataverse should handle the data]: consists of Storage.
 
