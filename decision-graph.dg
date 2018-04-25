@@ -27,11 +27,16 @@
     {signed: [set: DUAAgreementMethod=signed]}
   }
 ]
-[>FileAccess< ask:
-  {text: Do users have to request approval prior to using each file? }
+[>AccessRequirement< ask:
+  {text: Who can access the data? }
+  {terms:
+    {registered users: Users with a dataverse account.}
+    {approved users: Users who have requested to access the data, and whose request has been approved.}
+  }
   {answers:
-    {no: [set: FileAccess=open]}
-    {yes: [set: FileAccess=restricted]}
+    {anyone: [set: AccessRequirement=anyone]}
+    {registered users: [set: AccessRequirement=authenticated]}
+    {approved users: [set: AccessRequirement=approved]}
   }
 ]
 [>Storage< ask:
