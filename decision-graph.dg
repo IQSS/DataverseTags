@@ -1,8 +1,13 @@
-[>reg< ask:
-  {text: Can the data be accessed by non-registered users?}
+[>access-requirement< ask:
+  {text: Who can access the data? }
+  {terms:
+    {registered users: Users with a dataverse account.}
+    {approved users: Users who have requested to access the data, and whose request has been approved.}
+  }
   {answers:
-    {yes: [set: Registration=notRequired]}
-    {no:  [set: Registration=required]}
+    {anyone: [set: AccessRequirement=anyone]}
+    {registered users: [set: AccessRequirement=authenticated]}
+    {approved users: [set: AccessRequirement=approved]}
   }
 ]
 [>dua< ask:
@@ -27,19 +32,7 @@
     {signed: [set: DUAAgreementMethod=signed]}
   }
 ]
-[>AccessRequirement< ask:
-  {text: Who can access the data? }
-  {terms:
-    {registered users: Users with a dataverse account.}
-    {approved users: Users who have requested to access the data, and whose request has been approved.}
-  }
-  {answers:
-    {anyone: [set: AccessRequirement=anyone]}
-    {registered users: [set: AccessRequirement=authenticated]}
-    {approved users: [set: AccessRequirement=approved]}
-  }
-]
-[>Storage< ask:
+[>storage< ask:
   {text: Do the data have to be stored encrypted?}
   {answers:
     {yes: [set: Storage=encrypted]}

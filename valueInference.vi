@@ -1,17 +1,17 @@
 [Code: support
-  [Registration=notRequired; DUA=open;
+  [DUA=open;
     DUAAgreementMethod=implied; AccessRequirement=anyone;
     Storage=clear
     -> Blue]
-  [Registration=required; DUA=standard;
+  [DUA=standard;
     DUAAgreementMethod=implied; AccessRequirement=anyone;
     Storage=clear
     -> Green]
-  [Registration=required; DUA=custom;
+  [DUA=custom;
     DUAAgreementMethod=clickThrough; AccessRequirement=authenticated;
     Storage=clear
     -> Yellow]
-  [Registration=required; DUA=custom;
+  [DUA=custom;
     DUAAgreementMethod=signed; AccessRequirement=approved;
     Storage=encrypted
     -> Orange]

@@ -4,9 +4,7 @@ Code: one of Blue, Yellow, Green, Orange.
 
 Handling [How Dataverse should handle the data]: consists of Storage.
 
-Access [How people can access the data]: consists of Registration, DUA, DUAAgreementMethod, AccessRequirement.
-
-Registration: one of notRequired, required.
+Access [How people can access the data]: consists of DUA, DUAAgreementMethod, AccessRequirement.
 
 DUA: one of open,
             standard[Terms that say that we you need to register because we might need to contact you in the future if data need to be deleted],
