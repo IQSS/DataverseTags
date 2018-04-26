@@ -1,0 +1,11 @@
+anyone: anyone
+approved users: approved users
+click through: click through
+custom: custom
+implied: implied
+no: no
+open: open
+registered users: registered users
+signed: signed
+standard: standard
+yes: yes

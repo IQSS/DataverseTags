@@ -1,0 +1,1 @@
+Do the data have to be stored encrypted?
