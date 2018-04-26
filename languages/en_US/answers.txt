@@ -1,7 +1,7 @@
 anyone: anyone
 approved users: approved users
 click through: click through
-custom: custom
+custom: a customized DUA
 implied: implied
 no: no
 open: open
